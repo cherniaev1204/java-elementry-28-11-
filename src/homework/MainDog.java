@@ -9,14 +9,9 @@ public class MainDog {
         dog.setWeight(10);
         Dog dog1 = new Dog();
         dog1.setAge(10);
-        dog1.setWeight(10);
+        dog1.setWeight(1);
 
-        if (dog.equalsA(dog1)) {
-            System.out.println("true");
-        } else {
-            System.out.println("not true");
-        }
-        if (dog.equalsW(dog1)) {
+        if (dog.equals(dog1)) {
             System.out.println("true");
         } else {
             System.out.println("not true");

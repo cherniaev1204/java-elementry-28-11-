@@ -40,15 +40,8 @@ public class Dog {
         this.weight = weight;
     }
 
-
-
-    public boolean equalsA(Dog dog) {
-        if (age != 0) return Integer.toString(age).equals(Integer.toString(dog.age));
-        return dog.age == 0;
-    }
-
-    public boolean equalsW(Dog dog) {
-        if (weight != 0) return Integer.toString(weight).equals(Integer.toString(dog.weight));
-        return dog.weight == 0;
+    public boolean equals(Dog dog) {
+        if (age != 0 && weight != 0) return age == dog.age && weight == dog.weight;
+        return dog.age == 0 && dog.weight == 0;
     }
 }
