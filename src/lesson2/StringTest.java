@@ -1,6 +1,6 @@
 package lesson2;
 
-public class StringTest {
+public class  StringTest {
     public static void main(String[] args) {
         String string = "";
         String string1 = "Some text";
