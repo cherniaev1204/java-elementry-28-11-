@@ -8,13 +8,20 @@ public class StringConcat {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String sum = "";
-        while(true){
+        while (true) {
             String main = reader.readLine();
-            if (main.equals("хватит")){
+            if (main.equals("хватит")) {
                 break;
             }
-        sum = sum + main + " ,";
+//            sum = sum + main + ", ";
+        stringAppend(main);
         }
-        System.out.println(sum);
+        System.out.println(sum.substring(sum.length() - 2));
+    }
+
+    public static String stringAppend(String main) {
+        String sum = "";
+        sum = sum + main + ", ";
+        return sum;
     }
 }

@@ -13,8 +13,16 @@ public class BuilderConcat {
             if (main.equals("хватит")) {
                 break;
             }
-            builder.append(main + ", ");
+            stringAppend(main);
         }
+        builder.deleteCharAt(builder.length() - 2);
         System.out.println(builder);
+    }
+
+
+    public static String stringAppend(String main) {
+        String m2 = "";
+        m2 = m2 + main + ", ";
+        return m2;
     }
 }
