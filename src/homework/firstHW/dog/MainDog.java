@@ -1,4 +1,4 @@
-package homework;
+package homework.firstHW.dog;
 
 public class MainDog {
     public static void main(String[] args) {

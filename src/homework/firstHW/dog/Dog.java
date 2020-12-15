@@ -1,6 +1,4 @@
-package homework;
-
-import lesson2.Person;
+package homework.firstHW.dog;
 
 public class Dog {
     String breed;
