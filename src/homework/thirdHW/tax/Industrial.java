@@ -7,8 +7,7 @@ public class Industrial extends Tax {
         this.taxK = taxK;
     }
 
-    @Override
-    public void taxPay() {
-        super.taxPay();
+    public static int taxPay(int S, int taxK) {
+        return S * taxK;
     }
 }

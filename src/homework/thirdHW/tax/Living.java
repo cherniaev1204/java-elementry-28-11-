@@ -9,8 +9,8 @@ public class Living extends Tax {
         this.subsidies = subsidies;
     }
 
-    public void taxPay() {
-            System.out.println((S * taxK) - (S * taxK * (subsidies * 0.01)));
 
-    }
+//    public static int taxPay(int S, int taxK, int subsidies) {
+//        return (int)((S * taxK) - (S * taxK * (subsidies * 0.01)));
+//    }
 }

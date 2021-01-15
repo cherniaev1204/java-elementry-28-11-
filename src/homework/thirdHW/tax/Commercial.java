@@ -9,11 +9,11 @@ public class Commercial extends Tax {
         this.taxK = taxK;
     }
 
-    public void taxPay() {
+    public static int taxPay(int S, int taxK, int earnings) {
         if (earnings < 100) {
             System.out.println("Налог не взымается");
-        } else {
-            System.out.println(S * taxK);
         }
+        return S * taxK;
+
     }
 }

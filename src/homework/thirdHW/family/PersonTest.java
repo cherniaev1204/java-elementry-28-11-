@@ -3,6 +3,7 @@ package homework.thirdHW.family;
 public class PersonTest {
     String name;
 
+
     public static void main(String[] args) {
         Mother mother = new Mother("Mom");
         Father father = new Father("Dad");
