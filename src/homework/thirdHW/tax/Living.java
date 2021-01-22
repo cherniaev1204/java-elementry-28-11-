@@ -7,10 +7,11 @@ public class Living extends Tax {
         this.S = S;
         this.taxK = taxK;
         this.subsidies = subsidies;
+
     }
 
-
-//    public static int taxPay(int S, int taxK, int subsidies) {
-//        return (int)((S * taxK) - (S * taxK * (subsidies * 0.01)));
-//    }
+    @Override
+    public int taxPay(int S, int taxK) {
+        return (int) ((S * taxK) - (S * taxK * (subsidies * 0.01)));
+    }
 }

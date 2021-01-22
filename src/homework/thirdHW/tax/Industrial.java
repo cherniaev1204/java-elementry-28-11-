@@ -7,7 +7,7 @@ public class Industrial extends Tax {
         this.taxK = taxK;
     }
 
-    public static int taxPay(int S, int taxK) {
+    public int taxPay(int S, int taxK) {
         return S * taxK;
     }
 }
