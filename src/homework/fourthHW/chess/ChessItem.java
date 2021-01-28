@@ -1,13 +1,23 @@
 package homework.fourthHW.chess;
 
-public abstract class ChessItem implements Drawable{
-    private int x;
-    private int y;
-    private int value;
-    private String name;
+public abstract class ChessItem{
+    private String x;
+    private String y;
+    private String value;
+
+
+    public ChessItem(String x, String y, String value) {
+        this.x = x;
+        this.y = y;
+        this.value = value;
+    }
 
     @Override
-    public void draw() {
-        System.out.println("Place " + x + ";" + y + "; Value of the figure " + value + "; Name " + name);
+    public String toString() {
+        return "ChessItem{" +
+                "x=" + x +
+                ", y=" + y +
+                ", value='" + value + '\'' +
+                '}';
     }
 }

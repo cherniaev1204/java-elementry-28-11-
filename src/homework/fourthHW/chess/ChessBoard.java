@@ -1,10 +1,8 @@
 package homework.fourthHW.chess;
 
-public class ChessBoard implements Drawable{
+public class ChessBoard implements Drawable {
     @Override
-    public void draw() {
-
+    public String draw() {
+        return "Draw chess board";
     }
-
-    int cell;
 }
