@@ -10,8 +10,10 @@ public class Living extends Tax {
 
     }
 
-    @Override
-    public int taxPay(int S, int taxK) {
-        return (int) ((S * taxK) - (S * taxK * (subsidies * 0.01)));
-    }
+
+
+//    @Override
+//    public int taxPay(int S, int taxK) {
+//        return (int) ((S * taxK) - (S * taxK * (subsidies * 0.01)));
+//    }
 }

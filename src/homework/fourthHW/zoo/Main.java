@@ -1,4 +1,4 @@
-package homework.fourthHW;
+package homework.fourthHW.zoo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,11 +27,11 @@ public class Main {
                 default:
                     System.out.println("Invalid input");
             }
-                if (object instanceof homework.fourthHW.Flyable) {
+                if (object instanceof Flyable) {
                     ((Flyable) object).fly();
                 }
-            if (object instanceof homework.fourthHW.Runnable) {
-                ((homework.fourthHW.Runnable) object).run();
+            if (object instanceof Runnable) {
+                ((Runnable) object).run();
             }
             if (object instanceof Climable) {
                 ((Climable) object).climb();

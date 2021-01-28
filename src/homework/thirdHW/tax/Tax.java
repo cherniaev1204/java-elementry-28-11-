@@ -5,6 +5,7 @@ public class Tax {
     int taxK;
 
     public int taxPay(int S, int taxK) {
-        return S * taxK;
+        int tax = S * taxK;
+        return tax;
     }
 }

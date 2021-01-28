@@ -4,6 +4,7 @@ import lessons.lesson5.phone.AbstractPhone;
 
 public class Phone extends AbstractPhone {
     public Phone(int year) {
+
         super(year);
     }
 
@@ -16,6 +17,7 @@ public class Phone extends AbstractPhone {
 
     @Override
     public void ring(String inputNumber) {
+
         System.out.println("Телефон звонит");
     }
 }

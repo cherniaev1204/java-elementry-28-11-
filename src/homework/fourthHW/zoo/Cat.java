@@ -1,4 +1,4 @@
-package homework.fourthHW;
+package homework.fourthHW.zoo;
 
 public class Cat implements Climable, Runnable {
     @Override
