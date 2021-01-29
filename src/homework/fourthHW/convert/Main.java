@@ -13,9 +13,10 @@ public class Main {
             Object object = null;
             switch (input) {
                 case "Фаренгейты":
-                    System.out.println(Converter.convertFarengeit());
+                    object = new Celsium();
+                    System.out.println();
                 case "Цельсии":
-                    System.out.println(Converter.convertCelsium());
+                    System.out.println();
                 default:
                     System.out.println("Invalid input");
             }
