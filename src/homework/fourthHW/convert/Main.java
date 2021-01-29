@@ -6,16 +6,18 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        System.out.println("Введите градусы ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String input;
         while (!(input = reader.readLine()).isEmpty()) {
             Object object = null;
             switch (input) {
-                case "Кельвины":
-                    object = new Kelvins();
-            }
-            if (object instanceof Converter) {
-                ((Converter) object).covert();
+                case "Фаренгейты":
+                    System.out.println(Converter.convertFarengeit());
+                case "Цельсии":
+                    System.out.println(Converter.convertCelsium());
+                default:
+                    System.out.println("Invalid input");
             }
         }
     }
