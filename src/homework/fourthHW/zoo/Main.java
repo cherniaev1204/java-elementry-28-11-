@@ -9,32 +9,32 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String input;
         while (!(input = reader.readLine()).isEmpty()) {
-            Object object = null;
+            AbstractAnimal animal = null;
             switch (input) {
                 case "cat":
-                    object = new Cat();
+                    animal = new Cat();
                     break;
                 case "duck":
-                    object = new Duck();
+                    animal = new Duck();
                     break;
                 case "tiger":
-                    object = new Tiger();
+                    animal = new Tiger();
                     break;
                 case "dog":
-                    object = new Dog();
+                    animal = new Dog();
                     break;
 
                 default:
                     System.out.println("Invalid input");
             }
-                if (object instanceof Flyable) {
-                    ((Flyable) object).fly();
+                if (animal instanceof Flyable) {
+                    ((Flyable) animal).fly();
                 }
-            if (object instanceof Runnable) {
-                ((Runnable) object).run();
+            if (animal instanceof Runnable) {
+                ((Runnable) animal).run();
             }
-            if (object instanceof Climable) {
-                ((Climable) object).climb();
+            if (animal instanceof Climable) {
+                ((Climable) animal).climb();
             }
         }
     }

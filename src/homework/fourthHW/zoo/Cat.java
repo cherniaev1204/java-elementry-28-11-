@@ -1,6 +1,6 @@
 package homework.fourthHW.zoo;
 
-public class Cat implements Climable, Runnable {
+public class Cat extends AbstractAnimal implements Climable, Runnable {
     @Override
     public void climb() {
         System.out.println("Cat climbs");

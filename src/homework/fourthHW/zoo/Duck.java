@@ -1,6 +1,6 @@
 package homework.fourthHW.zoo;
 
-public class Duck implements Runnable, Flyable {
+public class Duck extends AbstractAnimal implements Runnable, Flyable {
 
     @Override
     public void fly() {
