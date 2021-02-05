@@ -13,7 +13,6 @@ public class Main {
             Object object = null;
             switch (input) {
                 case "Фаренгейты":
-                    object = new Celsium();
                     System.out.println();
                 case "Цельсии":
                     System.out.println();
