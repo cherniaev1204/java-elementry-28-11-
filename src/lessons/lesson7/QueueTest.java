@@ -31,11 +31,12 @@ public class QueueTest {
         ints.offer(5);
         System.out.println(ints.toString());
 
-        System.out.println(ints.peek());
-        System.out.println(ints);
+        System.out.println("Poll: ");
         System.out.println(ints.poll());
-        System.out.println(ints);
-        System.out.println(ints.remove());
-        System.out.println(ints);
+        System.out.println(ints.poll());
+        System.out.println(ints.poll());
+        System.out.println(ints.poll());
+        System.out.println(ints.poll());
+
     }
 }
