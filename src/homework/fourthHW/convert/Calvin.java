@@ -1,9 +1,8 @@
 package homework.fourthHW.convert;
 
-public class Farengeit implements Converter {
-
+public class Calvin implements Converter{
     @Override
     public int convert(int grades) {
-        return (grades * 9 / 5) + 32;
+        return grades + 273;
     }
 }
