@@ -10,7 +10,7 @@ public class Cat extends AbstractAnimal {
 
     public static Set<Cat> createCats() {
         HashSet<Cat> cats = new HashSet<>();
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 1; i <= 4; i++) {
             Cat cat = new Cat("Cat " + i);
             cats.add(cat);
         }

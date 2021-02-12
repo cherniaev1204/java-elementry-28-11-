@@ -9,7 +9,7 @@ public class Dog extends AbstractAnimal {
     }
     public static Set<Dog> createDogs() {
         HashSet<Dog> dogs = new HashSet<>();
-        for (int i = 0; i <= 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             Dog dog = new Dog("Dog " + i);
             dogs.add(dog);
         }

@@ -12,7 +12,7 @@ public class AnimalSet {
 
         System.out.println(catSet.toString());
 
-        removeCats(petSet,catSet);
+        //removeCats(petSet,catSet);
         printPets(petSet);
 
     }
