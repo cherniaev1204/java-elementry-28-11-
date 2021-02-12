@@ -23,13 +23,14 @@ public class HumansMap {
         people.put("Ivanov3", LocalDate.of(2007, 9, 8));
         System.out.println(people.toString());
 
-        List<String> maps = new ArrayList<>(people.keySet());
+        List<String> mapKeys = new ArrayList<>(people.keySet());
 
-        for (Map.Entry<String, LocalDate> peopleEntry : people.entrySet()) {
-            Month month = people.get(maps).getMonth();
+        for (String keys : mapKeys) {
+            Month month = people.get(keys).getMonth();
             if (month == Month.JUNE || month == Month.JULY || month == Month.AUGUST) {
-                people.remove(maps);
+                people.remove(keys);
             }
         }
+        System.out.println(people.toString());
     }
 }
