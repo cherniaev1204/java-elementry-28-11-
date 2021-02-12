@@ -1,4 +1,4 @@
-package homework.HW7;
+package homework.HW7.humansMap;
 
 
 import java.time.LocalDate;
