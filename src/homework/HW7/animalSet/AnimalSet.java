@@ -8,7 +8,7 @@ public class AnimalSet {
     public static void main(String[] args) {
         Set<Cat> catSet = Cat.createCats();
         Set<Dog> dogSet = Dog.createDogs();
-        Set<Object> petSet = join(catSet, dogSet);
+        Set<AbstractAnimal> petSet = join(catSet, dogSet);
 
         System.out.println(catSet.toString());
 
@@ -17,18 +17,18 @@ public class AnimalSet {
 
     }
 
-    public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs) {
-        Set<Object> pets = new HashSet<>();
+    public static Set<AbstractAnimal> join(Set<Cat> cats, Set<Dog> dogs) {
+        Set<AbstractAnimal> pets = new HashSet<>();
         pets.addAll(cats);
         pets.addAll(dogs);
         return pets;
     }
 
-    public static void removeCats(Set<Object> pets, Set<Cat> cats) {
+    public static void removeCats(Set<AbstractAnimal> pets, Set<Cat> cats) {
         pets.removeAll(cats);
     }
 
-    public static void printPets(Set<Object> pets) {
+    public static void printPets(Set<AbstractAnimal> pets) {
         System.out.println(pets.toString());
     }
 
