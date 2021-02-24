@@ -1,7 +1,6 @@
 package homework.task24;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 public class FileCopy {
     public static void main(String[] args) throws IOException {
@@ -9,6 +8,7 @@ public class FileCopy {
         String fileName;
         FileInputStream fileInputStream;
         String copyFile;
+        FileOutputStream fileOutputStream;
         try {
             System.out.println("Type file name which you will copy:");
             fileName = reader.readLine();
@@ -21,10 +21,17 @@ public class FileCopy {
             fileInputStream = new FileInputStream(fileName);
 
         }
-        System.out.println("Type file name in which you will copy: ");
-        copyFile = reader.readLine();
-        FileOutputStream fileOutputStream = new FileOutputStream(copyFile);
-        while(fileInputStream.available() > 0){
+        try {
+            System.out.println("Type file name in which you will copy: ");
+            copyFile = reader.readLine();
+            fileOutputStream = new FileOutputStream(copyFile);
+        } catch (IOException e) {
+            System.out.println("Файл не существует.");
+            System.out.println("Write file name one more time");
+            copyFile = reader.readLine();
+            fileOutputStream = new FileOutputStream(copyFile);
+        }
+        while (fileInputStream.available() > 0) {
             int text = fileInputStream.read();
             fileOutputStream.write(text);
         }
