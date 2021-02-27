@@ -20,7 +20,7 @@ public class Main {
             thr.join();
             System.out.println(thr.getName() + " joined");
         }
-        System.out.println("The result is " + Counter.getCOUNT());
+        System.out.println("Counted " + Counter.getCOUNT());
     }
 }
 
