@@ -10,6 +10,7 @@ package homework.HW7.accounting;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Main {
@@ -29,6 +30,13 @@ public class Main {
             }
 
         }
+        String[] array = list.toArray(new String[list.size()]);
+    }
+
+    public static void sort(String[] array) {
+        ArrayList<String> word = new ArrayList<>();
+        ArrayList<Integer> number = new ArrayList<>();
+
 
     }
 }
