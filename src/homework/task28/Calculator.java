@@ -8,8 +8,11 @@ import java.util.Map;
 public class Calculator {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите первое число: ");
         int num1 = Integer.parseInt(reader.readLine());
+        System.out.println("Введите второе число: ");
         int num2 = Integer.parseInt(reader.readLine());
+        System.out.println("Выберите операцию:\nADD\nDIVIDE\nMINUS\nMULTIPLY");
         String operator = reader.readLine();
         Actions.calculate(num1, num2, operator);
     }
