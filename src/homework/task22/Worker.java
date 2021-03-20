@@ -1,18 +1,14 @@
 package homework.task22;
 
-public class Worker implements Comparable{
-    String name;
-    String surname;
-    int salary;
+public class Worker {
+    String info;
 
-    public Worker(String name, String surname, int salary) {
-        this.name = name;
-        this.surname = surname;
-        this.salary = salary;
+    public Worker(String info) {
+        this.info = info;
+
     }
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
+    public String getInfo() {
+        return info;
     }
 }
