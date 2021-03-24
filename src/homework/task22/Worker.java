@@ -1,14 +1,25 @@
 package homework.task22;
 
 public class Worker {
-    String info;
+    String name;
+    String city;
+    int age;
 
-    public Worker(String info) {
-        this.info = info;
-
+    public String getName() {
+        return name;
     }
 
-    public String getInfo() {
-        return info;
+    public String getCity() {
+        return city;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Worker(String name, String city, int age) {
+        this.name = name;
+        this.city = city;
+        this.age = age;
     }
 }
